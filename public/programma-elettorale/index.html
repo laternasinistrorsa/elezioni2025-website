@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL='https://elezioni2025.laternasinistrorsa.it'" />
-    <title>Programma elettorale 2025</title>
+    <title class="translate" key="page_title">La Terna Sinistrorsa - elezioni 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">
+                <img src="/logo_terna.png" alt="Logo" />
+            </div>
+            <span class="logo-text">La Terna Sinistrorsa</span>
+        </div>
+        
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="language-btn" lang="it">IT</button>
+            <button class="language-btn" lang="en">EN</button>
+        </div>
+        
+        <h1 class="translate" key="title"></h1>
+        <h3 ><strong class="translate" key="subtitle_part1">Non</strong> <span class="translate" key="subtitle_part2">sono solo canzonette</span></h3>
 
+        <div class="button-container">
+            <!-- Pulsante a larghezza piena -->
+            <button class="spotify-button button-organi-centrali full-width-button translate" key="central_bodies"></button>
+            <!-- Pulsanti in griglia 2x3 -->
+            <div class="button-grid">
+                <button class="spotify-button button-scuola translate" key="school_3i"></button>
+                <button class="spotify-button button-scuola translate" key="school_auic"></button>
+                <button class="spotify-button button-scuola translate" key="school_icat"></button>
+                <button class="spotify-button button-scuola translate" key="school_design"></button>
+                <button class="spotify-button button-scuola translate" key="phd"></button>
+                <button class="spotify-button button-scuola translate" key="cnsu"></button>
+            </div>
+            
+            <!-- Pulsante contattaci a larghezza piena -->
+            <button class="spotify-button-outline full-width-button translate" key="contact"></button>
+        </div>
+    </div>
+    <script src="/language.js"></script>
+</body>
 </html>

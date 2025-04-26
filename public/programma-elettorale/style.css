@@ -1,0 +1,238 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Gradiente di sfondo corretto */
+body {
+    background: linear-gradient(180deg, #a91633 0%, #8f1347 50%, #801153 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 650px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-style: italic;
+}
+h3 strong {
+    font-weight: 700;
+    color: #d71c2a;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Pulsanti a larghezza piena */
+.full-width-button {
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 5px;
+}
+
+/* Grid per pulsanti in due colonne */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Stile pulsanti Spotify con colori aggiornati */
+.spotify-button {
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 14px 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradiente per pulsante Organi Centrali */
+.button-organi-centrali {
+    background: linear-gradient(90deg, #8B134B 0%, #801254 100%);
+}
+
+.button-organi-centrali:hover {
+    background: linear-gradient(90deg, #9B1358 0%, #901360 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Colore per pulsante CNSU */
+.button-cnsu {
+    background-color: #A486AF;
+}
+
+.button-cnsu:hover {
+    background-color: #B597BF;
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Gradiente per altri pulsanti */
+.button-scuola {
+    background: linear-gradient(90deg, #9B1735 0%, #B01938 100%);
+}
+
+.button-scuola:hover {
+    background: linear-gradient(90deg, #AB1A3A 0%, #C01C3D 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.spotify-button-outline {
+    background-color: transparent;
+    border: 2px solid #bf1825;
+    color: white;
+    border-radius: 500px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.spotify-button-outline:hover {
+    background-color: rgba(191, 24, 37, 0.1);
+    border-color: #d71c2a;
+    transform: scale(1.03);
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.logo-circle img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .spotify-button, .spotify-button-outline {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 500px;
+    padding: 3px;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+}
+
+.language-btn {
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.language-btn.active {
+    background: linear-gradient(90deg, #9B1735 0%, #B01938 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.language-btn:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    /* ...existing code... */
+    
+    .language-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
