@@ -1,0 +1,164 @@
+/* src/styles/centralOrgans.css */
+/* Styles specific to the central organs page */
+
+.central-organs-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .organ-section {
+    margin: 40px 0;
+  }
+  
+  .organ-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  /* Central candidates grid - slightly larger cards with different color scheme */
+  .central-candidates-grid {
+    display: grid;
+    gap: 25px;
+    margin: 30px 0;
+  }
+  
+  .central-candidates-grid .candidate-card {
+    background: linear-gradient(135deg, rgba(139, 19, 75, 0.3), rgba(128, 18, 84, 0.4));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    transform: scale(1.02);
+  }
+  
+  .central-candidates-grid .candidate-card:hover {
+    transform: translateY(-7px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .central-candidates-grid .candidate-photo {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .central-candidates-grid .candidate-name {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
+  .central-candidates-grid .candidate-desc {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+  
+  /* Academic Senate - 3 candidates in a row */
+  .central-candidates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Board of Directors - Center the single candidate */
+  .board-candidates-grid {
+    grid-template-columns: minmax(280px, 400px);
+    justify-content: center;
+  }
+  
+  .board-candidates-grid .candidate-card {
+    background: linear-gradient(135deg, rgba(139, 19, 75, 0.45), rgba(128, 18, 84, 0.55));
+    padding: 30px;
+    transform: scale(1.05);
+  }
+  
+  .board-candidates-grid .candidate-card:hover {
+    transform: translateY(-8px) scale(1.05);
+  }
+  
+  .board-candidates-grid .candidate-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .board-candidates-grid .candidate-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .board-candidates-grid .candidate-desc {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* First Candidate Styling in central organs */
+  .central-candidates-grid .candidate-card.first-candidate {
+    background: linear-gradient(135deg, rgba(139, 19, 75, 0.5), rgba(128, 18, 84, 0.6));
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    transform: scale(1.08);
+    z-index: 1;
+  }
+  
+  .central-candidates-grid .candidate-card.first-candidate:hover {
+    transform: scale(1.08) translateY(-8px);
+  }
+  
+  .central-candidates-grid .candidate-card.first-candidate .candidate-photo {
+    width: 170px;
+    height: 170px;
+  }
+  
+  .central-candidates-grid .candidate-card.first-candidate .candidate-name {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .central-candidates-grid .candidate-card.first-candidate .candidate-desc {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Download section styling specific to central organs */
+  .central-organs-download-section {
+    background: linear-gradient(135deg, rgba(139, 19, 75, 0.3), rgba(128, 18, 84, 0.4));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .central-candidates-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .central-candidates-grid .candidate-card.first-candidate {
+      grid-column: span 2;
+    }
+    
+    .board-candidates-grid {
+      grid-template-columns: minmax(250px, 350px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .central-candidates-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .central-candidates-grid .candidate-card {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .central-candidates-grid .candidate-card.first-candidate {
+      grid-column: 1;
+    }
+    
+    .board-candidates-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .board-candidates-grid .candidate-card {
+      max-width: 320px;
+    }
+  }

@@ -15,7 +15,7 @@ function SchoolPage(args) {
     // Update document title
     document.title = t('school_page_title_'+args.school);
     // Set download link based on the selected school
-    const link = `https://elezioni2025.laternasinistrorsa/download/${args.school}-${i18n.language}.pdf`; // Replace with actual link
+    const link = `https://elezioni2025.laternasinistrorsa/download/${args.school}-${(i18n.language.split("-")[0])}-LTS.pdf`; // Replace with actual link
     setDownloadLink(link);
   }, [t, i18n.language, args.school]);
 

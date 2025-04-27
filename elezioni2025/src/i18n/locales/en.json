@@ -10,7 +10,6 @@
     "cnsu": "CNSU",
     "contact": "Contact Us",
   
-    
     "logo_text": "La Terna Sinistrorsa",
     "back_button": "Go Back",
     "program_title": "Our Program",
@@ -19,6 +18,13 @@
     "school_candidates": "School Candidates",
     "course_candidates": "Candidates in Study Programs",
     "select_course": "Select a study program",
+
+    "central_organs_page_title": "La Terna Sinistrorsa - Central Bodies",
+    "central_organs_program_desc": "Download the complete PDF of our program for the Central Bodies",
+    "academic_senate": "Academic Senate",
+    "academic_senate_desc": "The Academic Senate is the body that represents the academic community and contributes to the governance of the University.",
+    "board_of_directors": "Board of Directors",
+    "board_of_directors_desc": "The Board of Directors is the governing body that determines the strategic direction of the University.",
 
     "school_page_title_3i": "Elections program  - 3i School",
     "school_name_3i": "3i School 🚀⚙️💻",

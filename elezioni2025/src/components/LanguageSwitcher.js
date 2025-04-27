@@ -13,7 +13,8 @@ function LanguageSwitcher() {
     // Add language parameter to URL if not present
     const url = new URL(window.location);
     if (!url.searchParams.has('lang')) {
-      const lang = i18n.language; // Default to Italian
+      let lang_code = i18n.language; // Default to Italian
+      const lang = lang_code.split('-')[0]; // Get the language code (e.g., 'it' or 'en')
       url.searchParams.set('lang', lang);
       window.history.replaceState({}, '', url);
     }
@@ -36,7 +37,7 @@ function LanguageSwitcher() {
     // Set active class on the current language button
     const buttons = document.querySelectorAll('.language-btn');
     buttons.forEach((button) => {
-      if (button.getAttribute('data-lang') === i18n.language) {
+      if (button.getAttribute('data-lang') === (i18n.language.split('-')[0])) {
         button.classList.add('active');
       } else {
         button.classList.remove('active');

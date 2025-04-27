@@ -25,10 +25,11 @@ function HomePage() {
       </h3>
 
       <div className="button-container">
+        <Link to="/programma-elettorale/organi-centrali">
         <button className="spotify-button button-organi-centrali full-width-button">
           {t('central_bodies')}
         </button>
-        
+        </Link>
         <div className="button-grid">
           <Link to="/programma-elettorale/3i">
             <button className="spotify-button button-scuola">

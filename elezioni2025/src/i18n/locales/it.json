@@ -28,11 +28,15 @@
     "school_name_AUIC": "Scuola 3i 🚀⚙️💻",
 
     "school_page_title_ICAT": "Programma Elettorale - Scuola ICAT",
-"school_name_ICAT": "Scuola ICAT 🌲🗾",
+    "school_name_ICAT": "Scuola ICAT 🌲🗾",
 
-"school_page_title_Design": "Programma Elettorale - Scuola di Design",
-"school_name_Design": "Scuola di Design ✒️📰👠"
+    "school_page_title_Design": "Programma Elettorale - Scuola di Design",
+    "school_name_Design": "Scuola di Design ✒️📰👠",
 
-  
-  }
-  
+    "central_organs_page_title": "La Terna Sinistrorsa - Organi Centrali",
+    "central_organs_program_desc": "Scarica il PDF completo del nostro programma per gli Organi Centrali",
+    "academic_senate": "Senato Accademico", 
+    "academic_senate_desc": "Il Senato Accademico è l'organo che rappresenta la comunità accademica e contribuisce al governo dell'Ateneo.",
+    "board_of_directors": "Consiglio di Amministrazione",
+    "board_of_directors_desc": "Il Consiglio di Amministrazione è l'organo di governo che determina l'indirizzo strategico dell'Ateneo."
+}
