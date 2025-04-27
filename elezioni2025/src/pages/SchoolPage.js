@@ -16,7 +16,7 @@ function SchoolPage(args) {
     document.title = t('school_page_title_'+args.school);
     // Set download link based on the selected school
     const link = `https://elezioni2025.laternasinistrorsa/download/${args.school}-${(i18n.language.split("-")[0])}-LTS.pdf`; // Replace with actual link
-    setDownloadLink(link);
+    setDownloadLink(link.toLowerCase());
   }, [t, i18n.language, args.school]);
 
   // Sample data for school candidates

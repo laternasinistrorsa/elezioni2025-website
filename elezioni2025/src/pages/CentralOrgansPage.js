@@ -15,7 +15,8 @@ function CentralOrgansPage() {
     
     // Set download link based on the current language
     const link = `https://elezioni2025.laternasinistrorsa/download/OrganiCentrali-${(i18n.language.split("-")[0])}-LTS.pdf`;
-    setDownloadLink(link);
+    
+    setDownloadLink(link.toLowerCase());
   }, [t, i18n.language]);
 
   // Academic Senate candidates
