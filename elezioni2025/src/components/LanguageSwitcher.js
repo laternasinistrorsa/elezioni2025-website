@@ -27,7 +27,7 @@ function LanguageSwitcher() {
       }
     });
     
-  }, [location]);
+  }, [location, i18n.language]);
 
   
 

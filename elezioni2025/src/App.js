@@ -8,7 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
      
-      // pass to the SchoolPage component the prop "course" with the value "3i"
+     { /* pass to the SchoolPage component the prop "course" with the value "3i" */}
       <Route path="/programma-elettorale/3i" element={<SchoolPage school="3i" />} />
       <Route path="/programma-elettorale/AUIC" element={<SchoolPage school="AUIC" />} />
       <Route path="/programma-elettorale/ICAT" element={<SchoolPage school="ICAT" />} />
