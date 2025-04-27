@@ -1,0 +1,92 @@
+/* src/styles/Home.css */
+/* Additional styles specific to the home page */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Pulsanti a larghezza piena */
+  .full-width-button {
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* Grid per pulsanti in due colonne */
+  .button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  /* Stile pulsanti Spotify con colori aggiornati */
+  .spotify-button {
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 14px 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Gradiente per pulsante Organi Centrali */
+  .button-organi-centrali {
+    background: linear-gradient(90deg, #8B134B 0%, #801254 100%);
+  }
+  
+  .button-organi-centrali:hover {
+    background: linear-gradient(90deg, #9B1358 0%, #901360 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Gradiente per altri pulsanti */
+  .button-scuola {
+    background: linear-gradient(90deg, #9B1735 0%, #B01938 100%);
+    width: 100%;
+  }
+  
+  .button-scuola:hover {
+    background: linear-gradient(90deg, #AB1A3A 0%, #C01C3D 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .spotify-button-outline {
+    background-color: transparent;
+    border: 2px solid #bf1825;
+    color: white;
+    border-radius: 500px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .spotify-button-outline:hover {
+    background-color: rgba(191, 24, 37, 0.1);
+    border-color: #d71c2a;
+    transform: scale(1.03);
+  }
+  
+  @media (max-width: 500px) {
+    .button-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  
