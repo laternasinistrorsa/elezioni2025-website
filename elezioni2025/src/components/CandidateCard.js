@@ -15,6 +15,7 @@ function CandidateCard({ name, description, photoUrl, spotifyTrackId }) {
           width="100%"
           height="152"
           frameBorder="0"
+          title={`${name} Spotify Track`}
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
