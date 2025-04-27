@@ -32,7 +32,13 @@ const setLanguage = (lang) => {
 
 const fetchLanguage = async (lang) => {
   //fetch the language file
-  const response = await fetch(`languages/${lang}.json`);
+  const baseUrl = window.location.origin;
+  let path = window.location.pathname;
+  if (path.endsWith("/")) {
+    path = path.slice(0, -1);
+  }
+  const fetchUrl = `${baseUrl}${path}/languages/${lang}.json`;
+  const response = await fetch(fetchUrl);
   if (response.ok) {
     const data = await response.json();
     return data;

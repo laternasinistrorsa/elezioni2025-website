@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="translate" key="school_page_title">La Terna Sinistrorsa - Scuola</title>
+    <link rel="stylesheet" href="/programma-elettorale/3i/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con logo e pulsante indietro -->
+        <div class="header">
+            <a href="/" class="logo">
+                <div class="logo-circle">
+                    <img src="/logo_terna.png" alt="Logo" />
+                </div>
+                <span class="logo-text">La Terna Sinistrorsa</span>
+            </a>
+            <a href="/" class="back-button translate" key="back_button">Torna Indietro</a>
+        </div>
+        
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="language-btn" lang="it">IT</button>
+            <button class="language-btn" lang="en">EN</button>
+        </div>
+        
+        <!-- Titolo della scuola -->
+        <h1 class="school-title translate" key="school_name"></h1>
+        <h3><strong>Non</strong><span>sono solo canzonette</span></h3>
+        
+        <!-- Sezione download programma -->
+        <div class="download-section">
+            <h2 class="translate" key="program_title">Il Nostro Programma</h2>
+            <p class="translate" key="program_desc">Scarica il PDF completo del nostro programma per la Scuola</p>
+            <button class="download-button">
+                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span class="translate" key="download_button">Scarica PDF</span>
+            </button>
+        </div>
+        
+        <!-- Divisore di sezione -->
+        <div class="section-divider"></div>
+        
+        <!-- Sezione candidati di scuola -->
+        <h2 class="translate" key="school_candidates">Candidati in Scuola</h2>
+        
+        <div class="candidates-grid">
+            <!-- Esempio candidato 1 -->
+            <div class="candidate-card">
+                <div class="candidate-photo">
+                    <img src="/api/placeholder/120/120" alt="Foto candidato" />
+                </div>
+                <div class="candidate-name">Marco Rossi</div>
+                <div class="candidate-desc">Architettura, 3° anno</div>
+                <div class="spotify-embed">
+                    <!-- Placeholder per l'embedding Spotify -->
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7huH1ed9v3pIfAisPQ0ME7?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Esempio candidato 2 -->
+            <div class="candidate-card">
+                <div class="candidate-photo">
+                    <img src="/api/placeholder/120/120" alt="Foto candidato" />
+                </div>
+                <div class="candidate-name">Laura Bianchi</div>
+                <div class="candidate-desc">Urbanistica, 2° anno</div>
+                <div class="spotify-embed">
+                    <!-- Placeholder per l'embedding Spotify -->
+                    <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            
+            <!-- Esempio candidato 3 -->
+            <div class="candidate-card">
+                <div class="candidate-photo">
+                    <img src="/api/placeholder/120/120" alt="Foto candidato" />
+                </div>
+                <div class="candidate-name">Andrea Verdi</div>
+                <div class="candidate-desc">Architettura, 5° anno</div>
+                <div class="spotify-embed">
+                    <!-- Placeholder per l'embedding Spotify -->
+                    <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Divisore di sezione -->
+        <div class="section-divider"></div>
+        
+        <!-- Sezione candidati corsi di studio -->
+        <h2 class="translate" key="course_candidates">Candidati nei Corsi di Studio</h2>
+        
+        <!-- Dropdown per selezionare il corso -->
+        <div class="courses-dropdown">
+            <select class="dropdown-select" id="course-selector">
+                <option value="" disabled selected class="translate" key="select_course">Seleziona un corso di studi</option>
+                <option value="architettura">Architettura</option>
+                <option value="urbanistica">Urbanistica</option>
+                <option value="design">Design degli Interni</option>
+                <!-- Aggiungi altri corsi secondo necessità -->
+            </select>
+        </div>
+        
+        <!-- Griglia candidati per corso (verrà mostrata in base alla selezione) -->
+        <div class="candidates-grid" id="course-candidates">
+            <!-- I candidati verranno caricati dinamicamente in base alla selezione del corso -->
+            <!-- Contenuto di esempio per il layout -->
+            <div class="candidate-card">
+                <div class="candidate-photo">
+                    <img src="/api/placeholder/120/120" alt="Foto candidato" />
+                </div>
+                <div class="candidate-name">Sofia Neri</div>
+                <div class="candidate-desc">Rep. Corso di Architettura</div>
+                <div class="spotify-embed">
+                    <!-- Placeholder per l'embedding Spotify -->
+                    <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            
+            <div class="candidate-card">
+                <div class="candidate-photo">
+                    <img src="/api/placeholder/120/120" alt="Foto candidato" />
+                </div>
+                <div class="candidate-name">Paolo Gialli</div>
+                <div class="candidate-desc">Rep. Corso di Architettura</div>
+                <div class="spotify-embed">
+                    <!-- Placeholder per l'embedding Spotify -->
+                    <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script per gestire la selezione dei corsi e il cambio lingua -->
+    <script>
+        // Esempio di script per la gestione del dropdown dei corsi
+        document.getElementById('course-selector').addEventListener('change', function() {
+            const selectedCourse = this.value;
+            console.log(`Corso selezionato: ${selectedCourse}`);
+            // Qui andrebbe la logica per caricare i candidati del corso selezionato
+        });
+        
+       
+     
+        
+    </script>
+    <script src="/language.js"></script>
+</body>
+</html>
