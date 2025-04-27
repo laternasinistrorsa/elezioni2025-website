@@ -12,9 +12,8 @@ function CentralOrgansPage() {
   useEffect(() => {
     // Update document title
     document.title = t('central_organs_page_title');
-    
-    // Set download link based on the current language
-    const link = `https://elezioni2025.laternasinistrorsa/download/OrganiCentrali-${(i18n.language.split("-")[0])}-LTS.pdf`;
+    const base_domain = process.env.REACT_APP_BASE_DOMAIN || 'https://elezioni2025.laternasinistrorsa.it';
+    const link = `${base_domain}/download/OrganiCentrali-${(i18n.language.split("-")[0])}-LTS.pdf`;
     
     setDownloadLink(link.toLowerCase());
   }, [t, i18n.language]);
