@@ -35,15 +35,22 @@ function HomePage() {
               {t('school_3i')}
             </button>
           </Link>
-          <button className="spotify-button button-scuola">
-            {t('school_auic')}
-          </button>
-          <button className="spotify-button button-scuola">
-            {t('school_icat')}
-          </button>
-          <button className="spotify-button button-scuola">
-            {t('school_design')}
-          </button>
+          <Link to="/programma-elettorale/AUIC">
+            <button className="spotify-button button-scuola">
+              {t('school_auic')}
+            </button>
+          </Link>
+          <Link to="/programma-elettorale/ICAT">
+            <button className="spotify-button button-scuola">
+              {t('school_icat')}
+            </button>
+          </Link>
+          <Link to="/programma-elettorale/Design">
+            <button className="spotify-button button-scuola">
+              {t('school_design')}
+            </button>
+          </Link>
+          
           <button className="spotify-button button-scuola">
             {t('phd')}
           </button>
@@ -51,10 +58,12 @@ function HomePage() {
             {t('cnsu')}
           </button>
         </div>
-        
+        <a href="https://www.instagram.com/la_terna_sinistrorsa/" target="_blank" rel="noopener noreferrer">
         <button className="spotify-button-outline full-width-button">
           {t('contact')}
+
         </button>
+        </a>
       </div>
     </div>
   );

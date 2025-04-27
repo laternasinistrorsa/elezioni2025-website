@@ -13,10 +13,19 @@ function LanguageSwitcher() {
     // Add language parameter to URL if not present
     const url = new URL(window.location);
     if (!url.searchParams.has('lang')) {
-      const lang = localStorage.getItem('lang') || 'it'; // Default to Italian
+      const lang = i18n.language; // Default to Italian
       url.searchParams.set('lang', lang);
       window.history.replaceState({}, '', url);
     }
+    // Set the language based on the URL parameter
+    const buttons = document.querySelectorAll('.language-btn');
+    buttons.forEach((button) => {
+      if (button.getAttribute('data-lang') === i18n.language) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
     
   }, [location]);
 

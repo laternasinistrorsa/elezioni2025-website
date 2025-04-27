@@ -48,10 +48,10 @@
     margin: 40px 0;
   }
   
-  /* Griglia candidati */
+  /* Griglia candidati - Keep three candidates in one row with flexible positioning */
   .candidates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 30px 0;
   }
@@ -129,6 +129,49 @@
     background-position: right 15px center;
   }
   
+  /* First Candidate Styling - Without forcing grid position */
+  .candidate-card.first-candidate {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .candidate-card.first-candidate:hover {
+    transform: scale(1.05) translateY(-8px);
+  }
+  
+  .candidate-card.first-candidate .candidate-photo {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .candidate-card.first-candidate .candidate-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .candidate-card.first-candidate .candidate-desc {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .candidate-card.first-candidate .spotify-embed {
+    max-width: 80%;
+    margin: 20px auto 0;
+  }
+  
+  /* Course candidates should use the original auto-fill grid */
+  #course-candidates {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  /* Responsive adjustments for first candidate */
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
@@ -136,12 +179,85 @@
     }
     
     .candidates-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .candidate-card.first-candidate {
+      padding: 25px;
+      transform: scale(1.03);
+    }
+    
+    .candidate-card.first-candidate:hover {
+      transform: scale(1.03) translateY(-8px);
+    }
+    
+    #course-candidates {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
   }
   
   @media (max-width: 500px) {
     .candidates-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 15px;
+    }
+    
+    .candidate-card.first-candidate {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      margin-bottom: 10px;
+    }
+    
+    .candidate-card:not(.first-candidate) {
+      grid-row: 2;
+      padding: 15px;
+    }
+    
+    .candidate-card:not(.first-candidate) .candidate-photo {
+      width: 90px;
+      height: 90px;
+    }
+    
+    .candidate-card:not(.first-candidate) .candidate-name {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+    
+    .candidate-card:not(.first-candidate) .candidate-desc {
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    
+    .candidate-card iframe {
+      height: 80px;
+    }
+    
+    .candidate-card.first-candidate iframe {
+      height: 152px;
+    }
+    
+    #course-candidates {
       grid-template-columns: 1fr;
+    }
+    
+    #course-candidates .candidate-card {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .candidates-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .candidate-card:not(.first-candidate) {
+      grid-column: 1 / -1;
+    }
+    
+    .candidate-card:not(.first-candidate) .candidate-photo {
+      width: 110px;
+      height: 110px;
     }
   }

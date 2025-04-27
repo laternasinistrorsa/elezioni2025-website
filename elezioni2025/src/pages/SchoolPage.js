@@ -5,37 +5,65 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 import CandidateCard from '../components/CandidateCard';
 import '../styles/school.css';
 
-function SchoolPage() {
+function SchoolPage(args) {
   const { t, i18n } = useTranslation();
   const [selectedCourse, setSelectedCourse] = useState('');
   const [courseCandidates, setCourseCandidates] = useState([]);
+  const [downloadLink, setDownloadLink] = useState('');
 
   useEffect(() => {
     // Update document title
-    document.title = t('school_page_title');
+    document.title = t('school_page_title_'+args.school);
+    // Set download link based on the selected school
+    const link = `https://elezioni2025.laternasinistrorsa/download/${args.school}-${i18n.language}.pdf`; // Replace with actual link
+    setDownloadLink(link);
   }, [t, i18n.language]);
 
   // Sample data for school candidates
-  const schoolCandidates = [
-    {
-      id: 1,
-      name: 'Marco Rossi',
-      description: 'Architettura, 3° anno',
-      spotifyTrackId: '7huH1ed9v3pIfAisPQ0ME7'
-    },
-    {
-      id: 2,
-      name: 'Laura Bianchi',
-      description: 'Urbanistica, 2° anno',
-      spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-    },
-    {
-      id: 3,
-      name: 'Andrea Verdi',
-      description: 'Architettura, 5° anno',
-      spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-    }
-  ];
+/* 
+  {
+    id: 1,
+    name: 'Marco Rossi',
+    description: 'Architettura, 3° anno',
+    spotifyTrackId: '7huH1ed9v3pIfAisPQ0ME7',
+    firstCandidate: false,
+  },
+  {
+    id: 2,
+    name: 'Laura Bianchi',
+    description: 'Urbanistica, 2° anno',
+    spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+    firstCandidate: true,
+  },
+  {
+    id: 3,
+    name: 'Andrea Verdi',
+    description: 'Architettura, 5° anno',
+    spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+    firstCandidate: false,
+  } */
+  const schoolCandidates = {
+    "3i": [
+      {
+        name: 'Nicolò Valenza',
+        description: 'Ing. Aerospaziale',
+        spotifyTrackId: '7huH1ed9v3pIfAisPQ0ME7',
+        firstCandidate: false,
+      },
+      {
+        name: 'Giuseppe Cirimele',
+        description: 'Ing. Aerospaziale',
+        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+        firstCandidate: true,
+      },
+      {
+        name: 'Mauro Preta',
+        description: 'Ing. Informatica',
+        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+        firstCandidate: false,
+      },
+    ]
+  };
 
   // Sample data for course candidates
   const courses = {
@@ -87,13 +115,14 @@ function SchoolPage() {
       <LanguageSwitcher />
       
       {/* School title */}
-      <h1 className="school-title">{t('school_name')}</h1>
-      <h3><strong>Non</strong><span>sono solo canzonette</span></h3>
+      <h1 className="school-title">{t('school_name_'+args.school)}</h1>
+      <h3><strong>Non</strong><span> sono solo canzonette</span></h3>
       
       {/* Download program section */}
       <div className="download-section">
         <h2>{t('program_title')}</h2>
         <p>{t('program_desc')}</p>
+        <a href={downloadLink} target="_blank" rel="noopener noreferrer">
         <button className="download-button">
           <svg className="download-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -102,6 +131,7 @@ function SchoolPage() {
           </svg>
           <span>{t('download_button')}</span>
         </button>
+        </a>
       </div>
       
       {/* Section divider */}
@@ -111,12 +141,13 @@ function SchoolPage() {
       <h2>{t('school_candidates')}</h2>
       
       <div className="candidates-grid">
-        {schoolCandidates.map(candidate => (
+        {schoolCandidates[args.school].map(candidate => (
           <CandidateCard
             key={candidate.id}
             name={candidate.name}
             description={candidate.description}
             spotifyTrackId={candidate.spotifyTrackId}
+            firstCandidate={candidate.firstCandidate}
           />
         ))}
       </div>

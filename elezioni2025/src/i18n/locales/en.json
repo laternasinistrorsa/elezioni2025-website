@@ -9,17 +9,26 @@
     "phd": "PhD Students",
     "cnsu": "CNSU",
     "contact": "Contact Us",
-    "subtitle_part1": "Non",
-    "subtitle_part2": "sono solo canzonette",
+  
     
-    "school_page_title": "La Terna Sinistrorsa - School",
     "logo_text": "La Terna Sinistrorsa",
     "back_button": "Go Back",
-    "school_name": "School 3i 🚀⚙️💻",
     "program_title": "Our Program",
     "program_desc": "Download the complete PDF of our program for the School",
     "download_button": "Download PDF",
     "school_candidates": "School Candidates",
     "course_candidates": "Candidates in Study Programs",
-    "select_course": "Select a study program"
+    "select_course": "Select a study program",
+
+    "school_page_title_3i": "Elections program  - 3i School",
+    "school_name_3i": "3i School 🚀⚙️💻",
+
+    "school_page_title_AUIC": "Elections program - AUIC School",
+    "school_name_AUIC": "AUIC School 🏢🗼🏗️",
+
+    "school_page_title_ICAT": "Electoral Program - ICAT School",
+    "school_name_ICAT": "School ICAT 🌲🗾",
+    
+    "school_page_title_Design": "Electoral Program - School of Design",
+    "school_name_Design": "School of Design ✒️📰👠"
   }

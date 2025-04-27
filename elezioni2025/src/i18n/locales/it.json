@@ -12,14 +12,27 @@
     "subtitle_part1": "Non",
     "subtitle_part2": "sono solo canzonette",
     
-    "school_page_title": "Programma Elettorale - Scuol3i",
+    
     "back_button": "Torna Indietro",
-    "school_name": "Scuola 3i 🚀⚙️💻",
     "program_title": "Il nostro programma",
     "program_desc": "Scarica il PDF completo del nostro programma per la Scuola",
     "download_button": "Scarica il PDF",
     "school_candidates": "Candidati in Scuola",
     "course_candidates": "Candidati nei consigli di corso di studio",
-    "select_course": "Seleziona un corso"
+    "select_course": "Seleziona un corso",
+
+    "school_page_title_3i": "Programma Elettorale - Scuola 3i",
+    "school_name_3i": "Scuola 3i 🚀⚙️💻",
+
+    "school_page_title_AUIC": "Programma Elettorale - Scuola AUIC",
+    "school_name_AUIC": "Scuola 3i 🚀⚙️💻",
+
+    "school_page_title_ICAT": "Programma Elettorale - Scuola ICAT",
+"school_name_ICAT": "Scuola ICAT 🌲🗾",
+
+"school_page_title_Design": "Programma Elettorale - Scuola di Design",
+"school_name_Design": "Scuola di Design ✒️📰👠"
+
+  
   }
   
