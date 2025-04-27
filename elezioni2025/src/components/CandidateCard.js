@@ -8,7 +8,7 @@ function CandidateCard({ name, description, photoUrl, spotifyTrackId, firstCandi
       </div>
       <div className="candidate-name">{name}</div>
       <div className="candidate-desc">{description}</div>
-      <div className="spotify-embed">
+      {/* <div className="spotify-embed">
         <iframe
           style={{ borderRadius: "12px" }}
           src={`https://open.spotify.com/embed/track/${spotifyTrackId}?utm_source=generator`}
@@ -20,7 +20,7 @@ function CandidateCard({ name, description, photoUrl, spotifyTrackId, firstCandi
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </div>
+      </div> */}
     </div>
   );
 }

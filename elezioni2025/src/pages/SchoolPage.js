@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import CandidateCard from '../components/CandidateCard';
 import '../styles/school.css';
+import schoolCandidates from '../candidates/school';
+import courses from '../candidates/ccs'; // Import course candidates data
 
 function SchoolPage(args) {
   const { t, i18n } = useTranslation();
@@ -43,68 +45,22 @@ function SchoolPage(args) {
     spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
     firstCandidate: false,
   } */
-  const schoolCandidates = {
-    "3i": [
-      {
-        name: 'Nicolò Valenza',
-        description: 'Ing. Aerospaziale',
-        spotifyTrackId: '7huH1ed9v3pIfAisPQ0ME7',
-        firstCandidate: false,
-      },
-      {
-        name: 'Giuseppe Cirimele',
-        description: 'Ing. Aerospaziale',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
-        firstCandidate: true,
-      },
-      {
-        name: 'Mauro Preta',
-        description: 'Ing. Informatica',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
-        firstCandidate: false,
-      },
-    ]
-  };
+  
 
   // Sample data for course candidates
-  const courses = {
-    architettura: [
-      {
-        id: 1,
-        name: 'Sofia Neri',
-        description: 'Rep. Corso di Architettura',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-      },
-      {
-        id: 2,
-        name: 'Paolo Gialli',
-        description: 'Rep. Corso di Architettura',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-      }
-    ],
-    urbanistica: [
-      {
-        id: 1,
-        name: 'Giulia Blu',
-        description: 'Rep. Corso di Urbanistica',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-      }
-    ],
-    design: [
-      {
-        id: 1,
-        name: 'Mario Rossi',
-        description: 'Rep. Corso di Design degli Interni',
-        spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT'
-      }
-    ]
-  };
+  
 
   // Handle course selection
   const handleCourseChange = (e) => {
     const course = e.target.value;
     setSelectedCourse(course);
-    setCourseCandidates(courses[course] || []);
+    
+    // Get candidates from the selected course of the current school
+    if (courses[args.school] && courses[args.school][course]) {
+      setCourseCandidates(courses[args.school][course].candidates || []);
+    } else {
+      setCourseCandidates([]);
+    }
   };
 
   return (
@@ -168,9 +124,11 @@ function SchoolPage(args) {
           onChange={handleCourseChange}
         >
           <option value="" disabled>{t('select_course')}</option>
-          <option value="architettura">Architettura</option>
-          <option value="urbanistica">Urbanistica</option>
-          <option value="design">Design degli Interni</option>
+          {Object.keys(courses[args.school] || {}).map(courseKey => (
+            <option key={courseKey} value={courseKey}>
+              {courses[args.school][courseKey].name}
+            </option>
+          ))}
         </select>
       </div>
       

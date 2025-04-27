@@ -4,6 +4,9 @@ import Header from '../components/Header';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import CandidateCard from '../components/CandidateCard';
 import '../styles/centralorgans.css';
+import senateCandidates from '../candidates/senate';
+import boardCandidates from '../candidates/cda';
+
 
 function CentralOrgansPage() {
   const { t, i18n } = useTranslation();
@@ -19,40 +22,7 @@ function CentralOrgansPage() {
   }, [t, i18n.language]);
 
   // Academic Senate candidates
-  const senateCandidates = [
-    {
-      id: 1,
-      name: 'Clarissa Pasculli',
-      description: 'Industrial Safety and risk engineering',
-      spotifyTrackId: '0vjeOZ3Ft5jvAi9SBFJm1j',
-      firstCandidate: false,
-    },
-    {
-      id: 2,
-      name: 'Francesca Rausa detta Franca',
-      description: 'Ingegneria ambientale',
-      spotifyTrackId: '4w3tQBXhn5345eUXDGBWZG',
-      firstCandidate: true,
-    },
-    {
-      id: 3,
-      name: 'Erica Ardu',
-      description: 'Ingegneria dei Materiali',
-      spotifyTrackId: '2EEeOnHehOozLq4aS0n6SL',
-      firstCandidate: false,
-    },
-  ];
-
-  // Board of Directors candidate
-  const boardCandidates = [
-    {
-      id: 1,
-      name: 'Luca Ferrari',
-      description: 'Ingegneria Civile, 4° anno',
-      spotifyTrackId: '7huH1ed9v3pIfAisPQ0ME7',
-      firstCandidate: true,
-    },
-  ];
+  
 
   return (
     <div className="container">
