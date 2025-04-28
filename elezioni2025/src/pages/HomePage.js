@@ -52,7 +52,7 @@ function HomePage() {
             </button>
           </Link>
           
-          <Link to="/programma-elettorale/PhD">
+          <Link to="/programma-elettorale/dottorandi">
             <button className="spotify-button button-scuola">
               {t('phd')}
             </button>

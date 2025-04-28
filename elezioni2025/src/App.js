@@ -4,6 +4,15 @@ import HomePage from "./pages/HomePage";
 import SchoolPage from "./pages/SchoolPage";
 import CentralOrgansPage from "./pages/CentralOrgansPage";
 import PhDPage from "./pages/PhDPage"; // Add import for PhD page component
+import { useEffect } from 'react';
+
+function ExternalRedirect({ to }) {
+  useEffect(() => {
+    window.location.href = to;
+  }, [to]);
+  
+  return <div>Redirecting...</div>;
+}
 
 function App() {
   return (
@@ -35,14 +44,11 @@ function App() {
       />
 
       {/* PhD page */}
-      <Route path="/programma-elettorale/PhD" element={<PhDPage />} />
+      <Route path="/programma-elettorale/dottorandi" element={<PhDPage />} />
 
-      <Route
-        path="/programma-elettorale/cnsu"
-        component={() => {
-          window.location.href = "https://linktr.ee/TitoCNSU";
-          return null;
-        }}
+      <Route 
+        path="/programma-elettorale/cnsu" 
+        element={<ExternalRedirect to="https://linktr.ee/TitoCNSU" />} 
       />
 
       {/* Add other routes as needed */}
