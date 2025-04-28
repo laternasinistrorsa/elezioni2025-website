@@ -16,7 +16,7 @@ function PhDPage() {
     
     // Set download link based on the selected language
     const base_domain = process.env.REACT_APP_BASE_DOMAIN || 'https://elezioni2025.laternasinistrorsa.it';
-    const link = `${base_domain}/download/PhD-${(i18n.language.split("-")[0])}-LTS.pdf`;
+    const link = `${base_domain}/download/dottorandi-${(i18n.language.split("-")[0])}-LTS.pdf`;
     
     setDownloadLink(link.toLowerCase());
   }, [t, i18n.language]);
