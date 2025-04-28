@@ -141,17 +141,49 @@
   
   @media (max-width: 500px) {
     .central-candidates-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .central-candidates-grid .candidate-card {
-      max-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 15px;
     }
     
     .central-candidates-grid .candidate-card.first-candidate {
-      grid-column: 1;
+      grid-column: 1 / -1;
+      grid-row: 1;
+      margin-bottom: 10px;
+      max-width: none;
+      width: 100%;
+    }
+    
+    .central-candidates-grid .candidate-card:not(.first-candidate) {
+      grid-row: 2;
+      padding: 15px;
+      max-width: none;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .central-candidates-grid .candidate-card:not(.first-candidate) .candidate-photo {
+      width: 90px;
+      height: 90px;
+    }
+    
+    .central-candidates-grid .candidate-card:not(.first-candidate) .candidate-name {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+    
+    .central-candidates-grid .candidate-card:not(.first-candidate) .candidate-desc {
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    
+    .central-candidates-grid .candidate-card iframe {
+      height: 80px;
+    }
+    
+    .central-candidates-grid .candidate-card.first-candidate iframe {
+      height: 152px;
     }
     
     .board-candidates-grid {
@@ -162,3 +194,22 @@
       max-width: 320px;
     }
   }
+
+@media (max-width: 375px) {
+  .central-candidates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .central-candidates-grid .candidate-card:not(.first-candidate) {
+    grid-column: 1 / -1;
+  }
+  
+  .central-candidates-grid .candidate-card:not(.first-candidate) .candidate-photo {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .central-candidates-grid .candidate-card {
+    max-width: none;
+  }
+}
