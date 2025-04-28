@@ -57,7 +57,7 @@ function HomePage() {
               {t('phd')}
             </button>
           </Link>
-          <a href='https://linktr.ee/TitoCNSU?utm_source=linktree_profile_share&ltsid=460274ec-e561-4bdf-b70f-bfde68b1e604' rel='noopener noreferrer'>
+          <a href='https://linktr.ee/TitoCNSU' rel='noopener noreferrer'>
           <button className="spotify-button button-scuola">
             {t('cnsu')}
           </button>
