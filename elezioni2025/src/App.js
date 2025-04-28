@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import SchoolPage from './pages/SchoolPage';
 import CentralOrgansPage from './pages/CentralOrgansPage';
+import PhDPage from './pages/PhDPage'; // Add import for PhD page component
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <Route path="/programma-elettorale/AUIC" element={<SchoolPage school="AUIC" />} />
       <Route path="/programma-elettorale/ICAT" element={<SchoolPage school="ICAT" />} />
       <Route path="/programma-elettorale/Design" element={<SchoolPage school="Design" />} />
+      
+      {/* PhD page */}
+      <Route path="/programma-elettorale/PhD" element={<PhDPage />} />
       
       {/* Add other routes as needed */}
     </Routes>

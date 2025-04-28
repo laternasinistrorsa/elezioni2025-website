@@ -261,3 +261,48 @@
       height: 110px;
     }
   }
+
+
+  /* Add this to the school.css file */
+.phd-candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.phd-candidates-grid .candidate-card {
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+.phd-candidates-grid .candidate-card:hover {
+  transform: scale(1.02) translateY(-8px);
+}
+
+.phd-candidates-grid .candidate-photo {
+  width: 140px;
+  height: 140px;
+}
+
+.phd-candidates-grid .candidate-name {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.phd-candidates-grid .candidate-desc {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .phd-candidates-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}

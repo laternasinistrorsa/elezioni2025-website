@@ -26,9 +26,9 @@ function HomePage() {
 
       <div className="button-container">
         <Link to="/programma-elettorale/organi-centrali">
-        <button className="spotify-button button-organi-centrali full-width-button">
-          {t('central_bodies')}
-        </button>
+          <button className="spotify-button button-organi-centrali full-width-button">
+            {t('central_bodies')}
+          </button>
         </Link>
         <div className="button-grid">
           <Link to="/programma-elettorale/3i">
@@ -52,18 +52,38 @@ function HomePage() {
             </button>
           </Link>
           
-          <button className="spotify-button button-scuola">
-            {t('phd')}
-          </button>
+          <Link to="/programma-elettorale/PhD">
+            <button className="spotify-button button-scuola">
+              {t('phd')}
+            </button>
+          </Link>
+          <a href='https://linktr.ee/TitoCNSU?utm_source=linktree_profile_share&ltsid=460274ec-e561-4bdf-b70f-bfde68b1e604' rel='noopener noreferrer'>
           <button className="spotify-button button-scuola">
             {t('cnsu')}
           </button>
+          </a>
         </div>
         <a href="https://www.instagram.com/la_terna_sinistrorsa/" target="_blank" rel="noopener noreferrer">
-        <button className="spotify-button-outline full-width-button">
-          {t('contact')}
-
-        </button>
+          <button className="spotify-button-outline full-width-button">
+          {t('contact')}  
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="16" 
+              height="16" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              style={{ position: 'absolute', marginLeft: '8px', marginBottom: '0px' }}
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            
+          </button>
         </a>
       </div>
     </div>

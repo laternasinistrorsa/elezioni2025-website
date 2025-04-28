@@ -6,7 +6,7 @@
     "school_auic": "Scuola AUIC 🏢🗼🏗️",
     "school_icat": "Scuola ICAT 🌲🗾",
     "school_design": "Scuola di Design ✒️📰👠",
-    "phd": "Dottorandi",
+    "phd": "Dottorandi 🎓📚",
     "cnsu": "CNSU",
     "contact": "Contattaci",
     "subtitle_part1": "Non",
@@ -32,6 +32,10 @@
 
     "school_page_title_Design": "Programma Elettorale - Scuola di Design",
     "school_name_Design": "Scuola di Design ✒️📰👠",
+    
+    "phd_page_title": "Programma Elettorale - Dottorandi",
+    "phd_name": "Dottorandi 🎓📚",
+    "phd_program_desc": "Scarica il PDF completo del nostro programma per i Dottorandi",
 
     "central_organs_page_title": "La Terna Sinistrorsa - Organi Centrali",
     "central_organs_program_desc": "Scarica il PDF completo del nostro programma per gli Organi Centrali",

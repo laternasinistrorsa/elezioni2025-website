@@ -14,7 +14,7 @@ const schoolCandidates = {
       },
       {
         name: 'Mauro Preta',
-        description: 'IIngegneria Informatica',
+        description: 'Ingegneria Informatica',
         spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
         firstCandidate: false,
       },
