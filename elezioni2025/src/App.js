@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import SchoolPage from "./pages/SchoolPage";
 import CentralOrgansPage from "./pages/CentralOrgansPage";
@@ -24,6 +24,14 @@ function App() {
         path="/programma-elettorale/organi-centrali"
         element={<CentralOrgansPage />}
       />
+      <Route 
+      path="/programma-elettorale"
+      element={<Navigate to="/" replace />}
+      >
+        
+
+      </Route>
+
 
       {/* School pages */}
       <Route
