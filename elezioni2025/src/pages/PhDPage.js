@@ -63,6 +63,7 @@ function PhDPage() {
             description={candidate.description}
             spotifyTrackId={candidate.spotifyTrackId}
             firstCandidate={candidate.firstCandidate}
+            photoName={candidate.photo}
           />
         ))}
       </div>

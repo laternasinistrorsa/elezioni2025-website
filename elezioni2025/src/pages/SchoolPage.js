@@ -105,6 +105,7 @@ function SchoolPage(args) {
             description={candidate.description}
             spotifyTrackId={candidate.spotifyTrackId}
             firstCandidate={candidate.firstCandidate}
+            photoName={candidate.photo}
           />
         ))}
       </div>
@@ -141,6 +142,7 @@ function SchoolPage(args) {
               name={candidate.name}
               description={candidate.description}
               spotifyTrackId={candidate.spotifyTrackId}
+              photoName={candidate.photo}
             />
           ))}
         </div>

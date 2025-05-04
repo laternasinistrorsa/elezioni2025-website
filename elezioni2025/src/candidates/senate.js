@@ -5,6 +5,8 @@ const senateCandidates = [
       description: 'Industrial Safety and risk engineering',
       spotifyTrackId: '0vjeOZ3Ft5jvAi9SBFJm1j',
       firstCandidate: false,
+      photo: "clarissa.png",
+      
     },
     {
       id: 2,
@@ -12,6 +14,7 @@ const senateCandidates = [
       description: 'Ingegneria ambientale',
       spotifyTrackId: '4w3tQBXhn5345eUXDGBWZG',
       firstCandidate: true,
+      photo: "franca.png",
     },
     {
       id: 3,
@@ -19,6 +22,7 @@ const senateCandidates = [
       description: 'Ingegneria dei Materiali',
       spotifyTrackId: '2EEeOnHehOozLq4aS0n6SL',
       firstCandidate: false,
+      photo: "erica.png",
     },
   ];
 // Board of Directors candidate

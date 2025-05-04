@@ -8,18 +8,21 @@ const courses = {
             name: 'Leonardo Duci',
             description: 'CCS Ingegneria Aerospaziale',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "leonardo.png",
           },
           {
             id: 2,
             name: 'Giuseppe Cirimele',
             description: 'CCS Ingegneria Aerospaziale',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "giuseppe.png",
           },
           {
             id: 3,
             name: 'Nicolò Valenza',
             description: 'CCS Ingegneria Aerospaziale',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "nicolo.png",
           }
         ]
       },
@@ -31,6 +34,7 @@ const courses = {
             name: 'Giovanni Turrina',
             description: 'CCS Ingegneria Biomedica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "giotur.png",
           }
         ]
       },
@@ -42,12 +46,14 @@ const courses = {
             name: 'Erica Ardu',
             description: 'CCS Ingegneria dei Materiali',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "erica.png",
           },
           {
             id: 2,
             name: 'Emma Ganzerla',
             description: 'CCS Ingegneria dei Materiali',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "emma.png",
           }
         ]
       },
@@ -59,6 +65,7 @@ const courses = {
             name: 'Filippo Palazzetti',
             description: 'CCS Ingegneria dell\'Automazione',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "filipala.png",
           }
         ]
       },
@@ -70,6 +77,7 @@ const courses = {
             name: 'Alberto Sturaro',
             description: 'CCS Ingegneria Elettrica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "albistur.png",
           }
         ]
       },
@@ -81,6 +89,7 @@ const courses = {
             name: 'Damiano Pasquini',
             description: 'CCS Ingegneria Elettronica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "dami.png",
           }
         ]
       },
@@ -92,6 +101,7 @@ const courses = {
             name: 'Federica Laneri',
             description: 'CCS Ingegneria Energetica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "fede.png",
           }
         ]
       },
@@ -103,6 +113,7 @@ const courses = {
             name: 'Francesca Mercatali',
             description: 'CCS Ingegneria Fisica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "francesca.png",
           }
         ]
       },
@@ -114,6 +125,7 @@ const courses = {
             name: 'Mauro Preta',
             description: 'CCS Ingegneria Informatica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "mauro.png",
           }
         ]
       },
@@ -125,12 +137,14 @@ const courses = {
             name: 'Sofia Riva',
             description: 'CCS Ingegneria Matematica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "sofia.png",
           },
           {
             id: 2,
             name: 'Tito Maraz Galassi',
             description: 'CCS Ingegneria Matematica',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "tito.png",
           }
         ]
       },
@@ -142,6 +156,7 @@ const courses = {
             name: 'Clarissa Pasculli',
             description: 'CCS Industrial Safety and Risk Engineering',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "clarissa.png",
           }
         ]
       }
@@ -155,12 +170,14 @@ const courses = {
             name: 'David Gryka',
             description: 'CCS Ingegneria Edile e delle Costruzioni',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "david.png",
           },
           {
             id: 2,
             name: 'Nadia Rosco',
             description: 'CCS Ingegneria Edile e delle Costruzioni',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "nadia.png",
           }
         ]
       },
@@ -172,24 +189,28 @@ const courses = {
             name: 'Luca Marchioro',
             description: 'CCS Progettazione dell\'architettura',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "luca.png",
           },
           {
             id: 2,
             name: 'Francesco Drago',
             description: 'CCS Progettazione dell\'architettura',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "fradrago.png",
           },
           {
             id: 3,
             name: 'Serena Ceroli',
             description: 'CCS Progettazione dell\'architettura',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "serena.png",
           },
           {
             id: 4,
             name: 'Thomas Arrigotti',
             description: 'CCS Progettazione dell\'architettura',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "thomas.png",
           }
         ]
       }
@@ -203,6 +224,7 @@ const courses = {
             name: 'Francesca Rausa',
             description: 'CCS Ingegneria Ambientale',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "franca.png",
           }
         ]
       }
@@ -216,6 +238,7 @@ const courses = {
             name: 'Giada Fusillo',
             description: 'CCS Design del Prodotto',
             spotifyTrackId: '4cOdK2wGLETKBW3PvgPWqT',
+            photo: "giada.png",
           }
         ]
       }

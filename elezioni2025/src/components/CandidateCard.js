@@ -1,10 +1,10 @@
 import React from 'react';
 
-function CandidateCard({ name, description, photoUrl, spotifyTrackId, firstCandidate }) {
+function CandidateCard({ name, description, photoName, spotifyTrackId, firstCandidate }) {
   return (
     <div className={`candidate-card ${firstCandidate ? "first-candidate" : ""}`}>
       <div className="candidate-photo">
-        <img src={photoUrl || "/api/placeholder/120/120"} alt={`Foto ${name}`} />
+        <img src={"/candidate_photo/"+photoName|| "/api/placeholder/120/120"} alt={`Foto ${name}`} />
       </div>
       <div className="candidate-name">{name}</div>
       <div className="candidate-desc">{description}</div>
